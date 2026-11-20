@@ -242,7 +242,7 @@ LUFFY/
 - [ ] **luffy/verl/verl/workers/critic/megatron_critic.py:176** - we may use the new schedule instead
 - [ ] **luffy/verl/verl/workers/fsdp_workers.py:88** - (sgm): support FSDP hybrid shard for larger model
 - [ ] **luffy/verl/verl/workers/fsdp_workers.py:117** - it seems that manual offload is slowly than FSDP offload
-- [ ] **luffy/verl/verl/workers/fsdp_workers.py:157** - (zhangchi.usc1992) 1. support create from random initialized model. 2. Support init with FSDP directly
+- [ ] **luffy/verl/verl/workers/fsdp_workers.py:157** - (zhangchi.usc1992): 1. support create from random initialized model. 2. Support init with FSDP directly
 - [ ] **luffy/verl/verl/workers/fsdp_workers.py:225** - (zhangchi.usc1992, shengguangming) fix me. Current, auto_wrap_policy causes HFRollout to hang in Gemma
 - [ ] **luffy/verl/verl/workers/fsdp_workers.py:233** - add transformer policy
 - [ ] **luffy/verl/verl/workers/fsdp_workers.py:252** - add more optimizer args into config
@@ -269,7 +269,7 @@ LUFFY/
 - [ ] **luffy/verl/verl/workers/sharding_manager/fsdp_vllm.py:122** - Current impl doesn't consider FSDP with torch micro-dp
 - [ ] **luffy/verl/verl/workers/sharding_manager/fsdp_vllm.py:130** - shall we build a micro_dp group for vllm when integrating with vLLM?
 - [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:76** - after binding to the memory buffer, we can load the checkpoint here
-- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:253** - (sgm): this may not be true for FSDP -&gt; vLLM
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:253** - (sgm): this may not be true for FSDP -> vLLM
 - [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (zhangchi.usc1992) We can consider copy non-tp weight to another infer buffer.
 
 ## 🤝 Contributing
